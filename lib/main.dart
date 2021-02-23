@@ -20,51 +20,38 @@ class XyloApp extends StatelessWidget {
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.red,
-                onPressed: () {
-                  playAudio(1);
-                },
+                onPressed: () => playAudio(1),
               ),
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.yellow,
-                onPressed: () {
-                  playAudio(2);
-                },
+                onPressed: () => playAudio(2),
               ),
+
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.teal,
-                onPressed: () {
-                  playAudio(3);
-                },
+                onPressed: () => playAudio(3),
               ),
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.purple,
-                onPressed: () {
-                  playAudio(4);
-                },
+                onPressed: () => playAudio(4),
               ),
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.orange,
-                onPressed: () {
-                  playAudio(5);
-                },
+                onPressed: () => playAudio(5),
               ),
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.green,
-                onPressed: () {
-                  playAudio(6);
-                },
+                onPressed: () => playAudio(6),
               ),
               // ignore: deprecated_member_use
               FlatButton(
                 color: Colors.blue,
-                onPressed: () {
-                  playAudio(7);
-                },
+                onPressed: () => playAudio(7),
               ),
               // ignore: deprecated_member_use
             ],
