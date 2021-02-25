@@ -9,51 +9,32 @@ class XyloApp extends StatelessWidget {
     player.play('note$noteNumber.wav');
   }
 
+  Expanded buildKey({Color color, int soundNumber}) {
+    return Expanded(
+      // ignore: deprecated_member_use
+      child: FlatButton(
+        color: color,
+        onPressed: () => playAudio(soundNumber),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             children: [
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.red,
-                onPressed: () => playAudio(1),
-              ),
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.yellow,
-                onPressed: () => playAudio(2),
-              ),
-
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.teal,
-                onPressed: () => playAudio(3),
-              ),
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.purple,
-                onPressed: () => playAudio(4),
-              ),
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.orange,
-                onPressed: () => playAudio(5),
-              ),
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.green,
-                onPressed: () => playAudio(6),
-              ),
-              // ignore: deprecated_member_use
-              FlatButton(
-                color: Colors.blue,
-                onPressed: () => playAudio(7),
-              ),
-              // ignore: deprecated_member_use
+              buildKey(color: Colors.red, soundNumber: 1),
+              buildKey(color: Colors.orange, soundNumber: 2),
+              buildKey(color: Colors.yellow, soundNumber: 3),
+              buildKey(color: Colors.green, soundNumber: 4),
+              buildKey(color: Colors.blue, soundNumber: 5),
+              buildKey(color: Colors.indigo, soundNumber: 6),
+              buildKey(color: Colors.purple, soundNumber: 7),
             ],
           ),
         ),
