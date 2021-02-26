@@ -27,6 +27,7 @@ class XyloApp extends StatelessWidget {
         backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               buildKey(color: Colors.red, soundNumber: 1),
               buildKey(color: Colors.orange, soundNumber: 2),
